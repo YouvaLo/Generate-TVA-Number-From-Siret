@@ -1,1 +1,57 @@
-# Verify-Siret-Generate-TVA
+# Verify-Siret-Generate-TVA 
+
+## Installation : 
+
+To start using this project, follow these steps to install the necessary dependencies.
+
+1. **Clonez le dépôt** :
+
+   ```bash
+   git clone https://github.com/YouvaLo/Verify-Siret-Generate-TVA.git
+   cd Verify-Siret-Generate-TVA
+
+---------------------------------------------------------------------------------------------------------------
+
+This code is used to generate a company's French VAT number from its siret (or siren) number. 
+
+## Example : 
+    
+    French TVA : FR 68 775701485 --> FR : Country code, 68 : Control Key, 775701485 : Siren 
+
+---------------------------------------------------------------------------------------------------------------
+
+This Code also enables you to check the validity of the Siret number, based on the Luhn algorithm. 
+
+## Explanation of the Luhn algorithm : 
+
+    Step1 : Check that the SIRET is 14 digits long.
+    
+    Step2 : Scroll through the digits from right to left.
+    
+    Step3 : Digits with an odd index are multiplied by two (hence the Temp variable, which is false when the index is even and true when the index is odd).
+
+    Step4 : The result of this multiplication by two, if is greater than 9, we subtract 9 otherwise we keep it as it is. 
+    
+    Step5 : We add up all the results.
+    
+    Step6 : If the total sum is a multiple of 10, then the siret is valid. 
+
+---------------------------------------------------------------------------------------------------------------
+
+## Generate TVA Examples 
+
+### Example 1 
+
+    Input : siret = "775701" 
+    Output : No tva number, because the siret number is invalid (siret length less than 14) 
+
+
+### Example 2 
+
+    Input : siret = "12345678912345"
+    Output : No TVA number, because the siret number is invalid (Luhn algorithm returns false)
+
+### Example 3
+
+    Input : siret = "77570148500101"
+    Output : TVA number = "FR68775701485" 
