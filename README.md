@@ -1,4 +1,4 @@
-# Verify-Siret-Generate-TVA 
+# Verify-Siret and Generate-TVA 
 
 ## Installation : 
 
