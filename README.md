@@ -2,8 +2,6 @@
 
 This code is written in C# .NET and calculates the intra-Community VAT number of a company in France from its Siret number, as well as checking the validity of the Siret number. 
 
-This code is written in C# .NET and calculates the intra-Community VAT number of a company in France from its Siret number, as well as checking the validity of the Siret number.
-
 ## Installation : 
 
 To start using this project, follow these steps to install the necessary dependencies.
