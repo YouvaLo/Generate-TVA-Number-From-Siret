@@ -8,11 +8,17 @@ This code is written in C# .NET and calculates the intra-Community VAT number of
 
 To start using this project, follow these steps to install the necessary dependencies.
 
-1. **Clonez le dépôt** :
+1. **Clone the repository** :
 
-   ```bash
-   git clone https://github.com/YouvaLo/Verify-Siret-Generate-TVA.git
-   cd Verify-Siret-Generate-TVA
+    ```bash
+    git clone https://github.com/YouvaLo/generate-tva-number-from-siret.git
+    cd generate-tva-number-from-siret
+
+2. **Install dependencies
+
+    ```bash 
+    dotnet add package Microsoft.Extensions.DependencyInjection
+    dotnet add package Microsoft.Extensions.Hosting
 
 ---------------------------------------------------------------------------------------------------------------
 
